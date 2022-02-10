@@ -104,13 +104,11 @@
   .app__wrapper_img {
     margin: 5rem 0 0 0;
   }
-  .app__wrapper_info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
   .app__wrapper_img-reverse {
     margin: 0 0 5rem 0;
+  }
+  .app__wrapper_img img {
+    width: 100%;
   }
 }
 
@@ -120,13 +118,15 @@
   }
   .headtext__cormorant {
     font-size: 50px;
-
     font-weight: normal;
   }
 }
 
 @media screen and (max-width: 650px) {
   .section__padding {
-    padding: 4rem 2rem;
+    padding: 3rem 2rem;
+  }
+  .p__cormorant {
+    font-size: 21px;
   }
 }

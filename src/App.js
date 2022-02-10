@@ -25,7 +25,6 @@ const App = () => (
     <Laurels />
 
     <FindUs />
-    <Footer />
   </div>
 );
 

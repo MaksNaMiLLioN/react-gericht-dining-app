@@ -1,0 +1,8 @@
+.app__footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: cornflowerblue;
+}
+.app__footer-newsletter {
+}
