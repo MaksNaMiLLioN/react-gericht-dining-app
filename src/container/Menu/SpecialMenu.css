@@ -1,8 +1,12 @@
 .app__specialMenu {
-  display: flex;
   flex-direction: column;
+  background: var(--color-black);
 }
 
+.app__specialMenu-title {
+  margin-bottom: 2rem;
+  text-align: center;
+}
 .app__specialMenu-content {
   display: flex;
   flex-direction: row;
@@ -12,7 +16,6 @@
 }
 
 .app__specialMenu-wine,
-.app__specialMenu-img,
 .app__specialMenu-cocktails {
   flex: 1;
   margin: 1rem;
@@ -67,8 +70,10 @@
   .app__specialMenu-content {
     flex-direction: column;
   }
+
   .app__specialMenu-img {
     display: flex;
+
     justify-content: center;
     align-items: center;
     margin-bottom: 3rem;

@@ -109,6 +109,9 @@
     justify-content: center;
     align-items: center;
   }
+  .app__wrapper_img-reverse {
+    margin: 0 0 5rem 0;
+  }
 }
 
 @media screen and (max-width: 850px) {

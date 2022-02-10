@@ -18,11 +18,21 @@ const SpecialMenu = () => {
     );
   };
 
-  return (
-    <div className="app__specialMenu app__wrapper section__padding">
-      <SubHeading title="Menu That Fits Your Palette" />
-      <h1 className="headtext__cormorant">Today's Special</h1>
+  const Title = () => {
+    return (
+      <div className="app__specialMenu-title">
+        <SubHeading title="Menu That Fits Your Palette" />
+        <h1 className="headtext__cormorant">Today's Special</h1>
+      </div>
+    );
+  };
 
+  return (
+    <div className="app__specialMenu section__padding flex__center">
+      <div className="app__specialMenu-title">
+        <SubHeading title="Menu that fits your palatte" />
+        <h1 className="headtext__cormorant">Today&apos;s Special</h1>
+      </div>
       <div className="app__specialMenu-content">
         <div className="app__specialMenu-wine">
           <p className="p__cormorant">Wine & Beer</p>

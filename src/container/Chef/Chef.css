@@ -1,0 +1,27 @@
+.app__wrapper_img img {
+  width: 80%;
+}
+
+.app__wrapper_info h1 {
+  margin: 1rem 0 2rem 0;
+}
+
+.app__wrapper_info .p__opensans_grey {
+  margin-bottom: 3rem;
+}
+
+.app__wrapper_info .chef__name {
+  color: var(--color-golden);
+  margin-bottom: 1rem;
+}
+
+.app__wrapper_info img {
+  margin-top: 1rem;
+  width: 236px;
+}
+
+@media screen and (max-width: 1150px) {
+  .app__wrapper_info .headtext__cormorant {
+    text-align: center;
+  }
+}
