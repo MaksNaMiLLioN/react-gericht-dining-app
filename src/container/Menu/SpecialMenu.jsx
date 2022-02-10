@@ -1,11 +1,61 @@
-import React from 'react';
+import React from "react";
+import SubHeading from "../../components/SubHeading/SubHeading";
+import { images, data } from "../../constants";
 
-import './SpecialMenu.css';
+import "./SpecialMenu.css";
 
-const SpecialMenu = () => (
-  <div>
-    SpecialMenu
-  </div>
-);
+const SpecialMenu = () => {
+  const MenuItem = ({ title, price, tags }) => {
+    return (
+      <div className="app__menu">
+        <div className="app__menu-title">
+          <div className="p__opensans app__menu-name">{title}</div>
+          <div className="app__menu-dash" />
+          <div className="app__menu-price p__opensans">{price}</div>
+        </div>
+        <div className="app__menu-subs p__opensans_grey">{tags}</div>
+      </div>
+    );
+  };
+
+  return (
+    <div className="app__specialMenu app__wrapper section__padding">
+      <SubHeading title="Menu That Fits Your Palette" />
+      <h1 className="headtext__cormorant">Today's Special</h1>
+
+      <div className="app__specialMenu-content">
+        <div className="app__specialMenu-wine">
+          <p className="p__cormorant">Wine & Beer</p>
+          <div className="app__specialMenu-wineItem">
+            {data.wines.map((wine, index) => (
+              <MenuItem
+                title={wine.title}
+                price={wine.price}
+                tags={wine.tags}
+                key={index}
+              />
+            ))}
+          </div>
+        </div>
+        <div className="app__specialMenu-img">
+          <img src={images.menu} alt="menu" />
+        </div>
+        <div className="app__specialMenu-cocktails">
+          <p className="p__cormorant">Cocktails</p>
+          <div className="app__specialMenu-wineItem">
+            {data.cocktails.map((cocktails, index) => (
+              <MenuItem
+                title={cocktails.title}
+                price={cocktails.price}
+                tags={cocktails.tags}
+                key={index}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default SpecialMenu;
