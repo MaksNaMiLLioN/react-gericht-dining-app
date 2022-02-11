@@ -1,0 +1,122 @@
+.app__gallery {
+  background: var(--color-black);
+  padding: 4rem 0 4rem 6rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.app__gallery h1 {
+  margin: 2rem 0;
+}
+
+.app__gallery .custom__button {
+  margin-top: 2rem;
+}
+
+.app__gallery-info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.app__gallery-images {
+  flex: 1;
+  max-width: 50%;
+  margin-left: 3rem;
+  display: flex;
+  position: relative;
+}
+
+.app__gallery-images_content {
+  display: flex;
+  flex: 1;
+  overflow-x: scroll;
+  object-fit: cover;
+}
+
+.app__gallery-images_card {
+  min-width: 301px;
+  width: max-content;
+  height: 440px;
+  margin-right: 1rem;
+  position: relative;
+}
+
+.app__gallery-images_card img {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: 0.5s ease;
+}
+
+.app__gallery-images_card:hover img {
+  opacity: 0.35;
+}
+
+.app__gallery-images_content::-webkit-scrollbar {
+  display: none;
+}
+
+.app__gallery-images_icon {
+  position: absolute;
+  color: #fff;
+  opacity: 0.35;
+  transition: 0.5s ease;
+}
+
+.app__gallery-images_card:hover .app__gallery-images_icon {
+  opacity: 1;
+}
+
+.app__gallery-images_arrows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  bottom: 5%;
+}
+
+.app__gallery-arrow_icon {
+  color: var(--color-white);
+  background: var(--color-black);
+  opacity: 0.5;
+}
+
+.app__gallery-arrow_icon:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1150px) {
+  .app__gallery {
+    flex-direction: column;
+    padding: 3rem 2rem;
+  }
+  .app__gallery-info,
+  .app__gallery-images {
+    width: 100%;
+  }
+  .app__gallery-info {
+    padding: 1rem;
+  }
+  .app__gallery-images {
+    max-width: 100%;
+    margin: 5rem 0;
+  }
+}
+@media screen and (max-width: 650px) {
+  .app__gallery {
+    padding: 4rem 0 4rem 2rem;
+  }
+
+  .app__gallery-images_content {
+    min-width: 100%;
+  }
+
+  .app__gallery-images_card {
+    min-width: 240px;
+    height: 320px;
+  }
+}
