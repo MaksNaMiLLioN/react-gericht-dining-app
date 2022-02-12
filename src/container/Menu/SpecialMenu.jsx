@@ -18,15 +18,6 @@ const SpecialMenu = () => {
     );
   };
 
-  const Title = () => {
-    return (
-      <div className="app__specialMenu-title">
-        <SubHeading title="Menu That Fits Your Palette" />
-        <h1 className="headtext__cormorant">Today's Special</h1>
-      </div>
-    );
-  };
-
   return (
     <div className="app__specialMenu section__padding flex__center">
       <div className="app__specialMenu-title">

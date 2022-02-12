@@ -79,4 +79,10 @@ const awards = [
   },
 ];
 
-export default { wines, cocktails, awards };
+const exportedObject = {
+  wines,
+  cocktails,
+  awards,
+};
+
+export default exportedObject;

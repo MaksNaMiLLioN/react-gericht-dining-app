@@ -44,7 +44,7 @@ const Gallery = () => {
         <div className="app__gallery-images_content" ref={scrollRef}>
           {imageGallery.map((image, index) => (
             <div className="app__gallery-images_card flex__center" key={index}>
-              <img src={image} alt="image" />
+              <img src={image} alt="image_photo" />
               <BsInstagram size={27} className="app__gallery-images_icon" />
             </div>
           ))}
