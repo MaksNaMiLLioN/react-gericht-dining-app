@@ -4,7 +4,7 @@ import { images } from "../../constants";
 const SubHeading = ({ title }) => (
   <div className="app__subheading">
     <div className="app__subheading-title p__cormorant">{title}</div>
-    <div className="app__subheading-img">
+    <div className="app__subheading-img flex__center">
       <img src={images.spoon} alt="spoon" style={{ width: "40px" }} />
     </div>
   </div>

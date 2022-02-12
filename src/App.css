@@ -99,9 +99,16 @@
   .section__padding {
     padding: 2rem 2rem;
   }
+
   .app__wrapper {
     flex-direction: column;
   }
+
+  .app__wrapper_info {
+    align-items: center;
+    justify-content: center;
+  }
+
   .headtext__cormorant {
     font-size: 30px;
   }

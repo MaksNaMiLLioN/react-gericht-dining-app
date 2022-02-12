@@ -100,6 +100,8 @@
   }
   .app__gallery-info {
     padding: 1rem;
+    align-items: center;
+    justify-content: center;
   }
   .app__gallery-images {
     max-width: 100%;
