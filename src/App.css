@@ -88,6 +88,10 @@
   border-radius: 5px;
 }
 
+.img__spoon {
+  width: 55px;
+}
+
 @media screen and (max-width: 2000px) {
 }
 

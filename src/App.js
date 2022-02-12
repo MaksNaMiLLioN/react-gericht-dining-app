@@ -25,6 +25,7 @@ const App = () => (
     <Laurels />
     <Gallery />
     <FindUs />
+    <Footer />
   </div>
 );
 

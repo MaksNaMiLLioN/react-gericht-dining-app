@@ -9,8 +9,8 @@ const Laurels = () => (
       <Subheading title="Awards & Recognition" />
       <h1 className="headtext__cormorant">Our Laurels</h1>
       <div className="app__laurels-content">
-        {data.awards.map((laurel) => (
-          <div className="app__laurels-card">
+        {data.awards.map((laurel, index) => (
+          <div className="app__laurels-card" key={index}>
             <div className="app__laurels-card_img">
               <img src={laurel.imgUrl} alt="" />
             </div>
